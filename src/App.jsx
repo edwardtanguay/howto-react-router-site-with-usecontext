@@ -12,7 +12,6 @@ import { AppContext } from './AppContext';
 const membersUrl = 'https://edwardtanguay.netlify.app/share/employees.json';
 
 function App() {
-	const [books, setBooks] = useState([]);
 	const [members, setMembers] = useState([]);
 	const { siteTitle } = useContext(AppContext);
 
@@ -34,11 +33,11 @@ function App() {
 			<Routes>
 				<Route
 					path="/welcome"
-					element={<PageWelcome books={books} members={members} />}
+					element={<PageWelcome members={members} />}
 				/>
 				<Route
 					path="/books"
-					element={<PageBooks books={books} setBooks={setBooks} />}
+					element={<PageBooks/>}
 				/>
 				<Route
 					path="/members"
@@ -46,7 +45,7 @@ function App() {
 				/>
 				<Route
 					path="/about"
-					element={<PageAbout books={books} members={members} />}
+					element={<PageAbout members={members} />}
 				/>
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
 			</Routes>

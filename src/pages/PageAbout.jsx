@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { AppContext } from '../AppContext';
 
-export const PageAbout = ({ books, members }) => {
-	const { siteTitle } = useContext(AppContext);
+export const PageAbout = ({ members }) => {
+	const { siteTitle, books } = useContext(AppContext);
 
 	return (
 		<div className="page_about">
