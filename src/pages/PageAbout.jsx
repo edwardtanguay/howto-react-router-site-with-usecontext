@@ -1,8 +1,8 @@
-export const PageAbout = ({ books, members }) => {
+export const PageAbout = ({ books, members, siteTitle }) => {
 	return (
 		<div className="page_about">
 			<h2>About</h2>
-			<p>We have been a club for 5 years now.</p>
+			<p>{siteTitle} has existed for 5 years.</p>
 			<p>
 				We would love to have you as member #{members.length + 1} and
 				hear your suggestion for book #{books.length + 1}, please write
