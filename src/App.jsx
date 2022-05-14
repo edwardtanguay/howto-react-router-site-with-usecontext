@@ -9,19 +9,12 @@ import axios from 'axios';
 import { useContext } from 'react';
 import { AppContext } from './AppContext';
 
-const booksUrl = 'https://edwardtanguay.netlify.app/share/books.json';
 const membersUrl = 'https://edwardtanguay.netlify.app/share/employees.json';
 
 function App() {
 	const [books, setBooks] = useState([]);
 	const [members, setMembers] = useState([]);
 	const { siteTitle } = useContext(AppContext);
-
-	useEffect(() => {
-		(async () => {
-			setBooks((await axios.get(booksUrl)).data);
-		})();
-	}, []);
 
 	useEffect(() => {
 		(async () => {
