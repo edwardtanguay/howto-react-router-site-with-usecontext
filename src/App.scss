@@ -37,7 +37,11 @@ body {
 					font-size: 1.1rem;
 					font-style: italic;
 				}
-
+			}
+			.buttons {
+				button {
+					margin-right: 5px;
+				}
 			}
 		}
 	}
@@ -67,5 +71,6 @@ body {
 				}
 			}
 		}
+
 	}
 }
