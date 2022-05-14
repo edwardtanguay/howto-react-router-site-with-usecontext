@@ -12,4 +12,32 @@ body {
 	a.active {
 		color: yellow;
 	}
+
+	.books {
+		.book {
+			background-color: rgb(14, 11, 74);
+			padding: 20px;
+			margin: 0 0 10px 0;
+			border-radius: 5px;
+			display: flex;
+
+			img {
+				margin-top: 10px;
+				height: 130px;
+			}
+
+			.info {
+				margin-left: 20px;
+				.title {
+					color: rgb(210, 210, 133);
+				}
+
+				.description {
+					font-size: 1.1rem;
+					font-style: italic;
+				}
+
+			}
+		}
+	}
 }
