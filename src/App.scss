@@ -28,6 +28,7 @@ body {
 
 			.info {
 				margin-left: 20px;
+
 				.title {
 					color: rgb(210, 210, 133);
 				}
@@ -37,6 +38,33 @@ body {
 					font-style: italic;
 				}
 
+			}
+		}
+	}
+
+	.members {
+		.member {
+			background-color: rgb(3, 30, 11);
+			padding: 20px;
+			border-radius: 5px;
+			display: flex;
+			margin-bottom: 10px;
+
+			img {
+				height: 100px;
+			}
+
+			.info {
+				margin-left: 20px;
+
+				.name {
+					color: rgb(228, 185, 105);
+				}
+
+				.notes {
+					font-size: 1.1rem;
+					font-style: italic;
+				}
 			}
 		}
 	}
