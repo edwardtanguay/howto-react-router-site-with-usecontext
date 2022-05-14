@@ -3,7 +3,6 @@ import { AppContext } from '../AppContext';
 
 export const Book = ({book}) => {
 	const { books, setBooks } = useContext(AppContext);
-	console.log(book.title);
 
 	const handleDeleteBook = (book) => {
 		const _books = books.filter((m) => m.id !== book.id);

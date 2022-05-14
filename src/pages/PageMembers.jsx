@@ -1,4 +1,9 @@
-export const PageMembers = ({ members }) => {
+import { useContext } from 'react';
+import { AppContext } from '../AppContext';
+
+export const PageMembers = () => {
+	const { members } = useContext(AppContext);
+
 	return (
 		<div className="page_members">
 			<h2>Members</h2>
