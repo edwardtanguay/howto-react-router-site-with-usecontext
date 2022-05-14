@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-const AppContext = createContext();
+export const AppContext = createContext();
  
 export const AppProvider = ({ children }) => {
-	const siteTitle = "The Book Club"
+	const siteTitle = "The Online Book Club"
 
 	return (
 		<AppContext.Provider value={{
@@ -14,5 +14,3 @@ export const AppProvider = ({ children }) => {
 	);
 
 };
-
-export default AppContext;
